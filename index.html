@@ -115,3 +115,196 @@
 </div>
 </body>
 </html>
+
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI開発プラットフォーム セキュリティ対策ガイド - アジェンダ</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            position: relative;
+            background-color: #1a2a3a;
+            overflow: hidden;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        .title {
+            font-family: 'Noto Sans JP', sans-serif;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .agenda-item {
+            transition: transform 0.3s ease;
+        }
+        .agenda-item:hover {
+            transform: translateX(5px);
+        }
+        .agenda-number {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-weight: bold;
+        }
+        .agenda-circle {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .security-tag {
+            font-size: 0.7rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.75rem;
+            display: inline-block;
+            margin-right: 0.25rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container flex flex-col items-center justify-center text-white">
+<!-- Header -->
+<div class="z-10 w-full px-16 mb-6">
+<h1 class="title text-5xl font-bold text-center mt-12 mb-2">アジェンダ</h1>
+<div class="h-px w-32 bg-blue-400 mx-auto mb-4"></div>
+<p class="text-center text-lg text-gray-300 mb-6">AI開発プラットフォームのセキュリティ対策と安全な利用方法について</p>
+</div>
+<!-- 企業の関心ポイント -->
+<div class="w-full px-16 mb-5">
+<div class="bg-blue-900 bg-opacity-40 rounded-lg p-3 flex items-center justify-center">
+<i class="fas fa-exclamation-circle text-yellow-400 mr-3 text-2xl"></i>
+<p class="text-yellow-200 text-sm font-medium">企業の主な関心ポイント: <span class="ml-2 bg-blue-800 px-2 py-1 rounded text-white">データ学習の無効化設定</span> <span class="ml-2 bg-blue-800 px-2 py-1 rounded text-white">オフライン・ローカル環境での使用可能性</span></p>
+</div>
+</div>
+<!-- Agenda Items -->
+<div class="z-10 grid grid-cols-2 gap-x-16 gap-y-6 px-16 w-full max-w-6xl">
+<!-- Item 1 -->
+<div class="agenda-item flex items-center">
+<div class="agenda-circle bg-blue-600 mr-5 flex-shrink-0">
+<span class="agenda-number text-2xl">1</span>
+</div>
+<div>
+<h3 class="font-semibold text-xl mb-1">本ガイドの目的とセキュリティ課題</h3>
+<p class="text-gray-300 text-sm">企業におけるAI開発プラットフォーム導入時のセキュリティ懸念点</p>
+</div>
+<div class="ml-auto">
+<i class="fas fa-shield-alt text-blue-400 text-3xl"></i>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="agenda-item flex items-center">
+<div class="agenda-circle bg-green-600 mr-5 flex-shrink-0">
+<span class="agenda-number text-2xl">2</span>
+</div>
+<div>
+<h3 class="font-semibold text-xl mb-1">Difyのセキュリティ対策</h3>
+<p class="text-gray-300 text-sm">
+<span class="security-tag bg-green-900 text-green-200">自己管理データ</span>
+<span class="security-tag bg-green-900 text-green-200">オンプレミス完全対応</span>
+</p>
+</div>
+<div class="ml-auto">
+<i class="fas fa-server text-green-400 text-3xl"></i>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="agenda-item flex items-center">
+<div class="agenda-circle bg-indigo-600 mr-5 flex-shrink-0">
+<span class="agenda-number text-2xl">3</span>
+</div>
+<div>
+<h3 class="font-semibold text-xl mb-1">ChatGPTのセキュリティ対策</h3>
+<p class="text-gray-300 text-sm">
+<span class="security-tag bg-indigo-900 text-indigo-200">Enterprise設定</span>
+<span class="security-tag bg-indigo-900 text-indigo-200">Azure連携</span>
+</p>
+</div>
+<div class="ml-auto">
+<i class="fas fa-lock text-indigo-400 text-3xl"></i>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="agenda-item flex items-center">
+<div class="agenda-circle bg-red-600 mr-5 flex-shrink-0">
+<span class="agenda-number text-2xl">4</span>
+</div>
+<div>
+<h3 class="font-semibold text-xl mb-1">Geminiのセキュリティ対策</h3>
+<p class="text-gray-300 text-sm">
+<span class="security-tag bg-red-900 text-red-200">組織ポリシー</span>
+<span class="security-tag bg-red-900 text-red-200">Distributed Cloud</span>
+</p>
+</div>
+<div class="ml-auto">
+<i class="fas fa-cloud-upload-alt text-red-400 text-3xl"></i>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="agenda-item flex items-center">
+<div class="agenda-circle bg-purple-600 mr-5 flex-shrink-0">
+<span class="agenda-number text-2xl">5</span>
+</div>
+<div>
+<h3 class="font-semibold text-xl mb-1">Claudeのセキュリティ対策</h3>
+<p class="text-gray-300 text-sm">
+<span class="security-tag bg-purple-900 text-purple-200">オプトアウト</span>
+<span class="security-tag bg-purple-900 text-purple-200">エアギャップ型対応</span>
+</p>
+</div>
+<div class="ml-auto">
+<i class="fas fa-key text-purple-400 text-3xl"></i>
+</div>
+</div>
+<!-- Item 6 -->
+<div class="agenda-item flex items-center">
+<div class="agenda-circle bg-yellow-600 mr-5 flex-shrink-0">
+<span class="agenda-number text-2xl">6</span>
+</div>
+<div>
+<h3 class="font-semibold text-xl mb-1">プラットフォーム比較とセキュリティ評価</h3>
+<p class="text-gray-300 text-sm">各プラットフォームのセキュリティ機能と国際認証対応状況</p>
+</div>
+<div class="ml-auto">
+<i class="fas fa-chart-bar text-yellow-400 text-3xl"></i>
+</div>
+</div>
+<!-- Item 7 -->
+<div class="agenda-item flex items-center col-span-2 mt-2">
+<div class="agenda-circle bg-teal-600 mr-5 flex-shrink-0">
+<span class="agenda-number text-2xl">7</span>
+</div>
+<div>
+<h3 class="font-semibold text-xl mb-1">導入推奨ポイントとQ&amp;A</h3>
+<p class="text-gray-300 text-sm">利用目的・環境に合わせたプラットフォーム選択指針と質疑応答</p>
+</div>
+<div class="ml-auto">
+<i class="fas fa-lightbulb text-teal-400 text-3xl"></i>
+</div>
+</div>
+</div>
+<!-- Bottom Section -->
+<div class="absolute bottom-8 right-8 text-sm text-gray-400 opacity-70">
+<div class="flex items-center">
+<i class="fas fa-shield-alt mr-2"></i>
+<span>GDPR・SOC2・ISO27001対応状況を含む包括的評価</span>
+</div>
+</div>
+<!-- Corner Decorative Elements -->
+<div class="absolute top-6 left-6 h-12 w-12 border-t-2 border-l-2 border-blue-400 opacity-70"></div>
+<div class="absolute top-6 right-6 h-12 w-12 border-t-2 border-r-2 border-blue-400 opacity-70"></div>
+<div class="absolute bottom-6 left-6 h-12 w-12 border-b-2 border-l-2 border-blue-400 opacity-70"></div>
+<div class="absolute bottom-6 right-6 h-12 w-12 border-b-2 border-r-2 border-blue-400 opacity-70"></div>
+</div>
+</body>
+</html>
